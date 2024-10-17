@@ -29,5 +29,14 @@ customer2.getACCOUNT().deposit(500);
  customer2.getACCOUNT().withdraw(1000000);
         customer2.getACCOUNT().withdraw(100);
 
+  Checking checkingAccount2 = new Checking();
+Customer customer3 = new Customer("Patrick", "Star",checkingAccount2);
+bank1.addCustomer(customer3);
+
+customer1.getACCOUNT().deposit(1000);
+customer1.getACCOUNT().withdraw(100);
+
+bank1.printAllCustomersAccountInfo();
+      //  System.out.println(bank1.customer.length); //didnt solve
     }
 }
